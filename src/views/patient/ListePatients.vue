@@ -9,6 +9,10 @@
           <span class="mr-2"><i data-feather="user-plus"></i></span>
           Créer Patient
         </router-link>
+        <router-link to="/visite-patient" class="flex items-center bg-green-900 hover:bg-green-900 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline ml-4">
+          <span class="mr-2"><i data-feather="user-plus"></i></span>
+          Patient Existant
+        </router-link>
       </div>
 
       <div class="bg-white shadow-md rounded-lg overflow-hidden">

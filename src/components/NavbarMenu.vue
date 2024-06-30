@@ -23,6 +23,8 @@
               <div class="flex space-x-4">
                 <router-link to="/" class="text-gray-700 hover:bg-blue-500 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</router-link>
                 <router-link to="/patients" class="text-gray-700 hover:bg-blue-500 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Liste des Patients</router-link>
+                <router-link to="/gestion-ssi" class="text-gray-700 hover:bg-blue-500 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Gestion SSI</router-link>
+
                 <!-- Ajoutez d'autres liens ici -->
               </div>
             </div>
@@ -35,6 +37,9 @@
         <div class="px-2 pt-2 pb-3 space-y-1">
           <router-link to="/" class="text-gray-700 hover:bg-blue-500 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</router-link>
           <router-link to="/patients" class="text-gray-700 hover:bg-blue-500 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Liste des Patients</router-link>
+          <router-link to="/gestion-ssi" class="text-gray-700 hover:bg-blue-500 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Gestion SSI</router-link>
+
+          
           <!-- Ajoutez d'autres liens ici -->
         </div>
       </div>

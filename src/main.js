@@ -6,6 +6,6 @@ import './assets/tailwind.css';
 
 const app = createApp(App);
 
-app.config.globalProperties.$axios = axios; // Ajoutez axios aux propriétés globales de l'application
+app.config.globalProperties.$axios = axios; 
 
 app.use(router).mount('#app');
