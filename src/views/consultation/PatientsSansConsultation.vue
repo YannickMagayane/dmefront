@@ -47,9 +47,10 @@
               <label for="hospitalisation" class="ml-2">Hospitaliser</label>
             </div>
             <div class="flex justify-between">
-              <button type="button" @click="selectedPatient = null" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Annuler</button>
-              <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Enregistrer Consultation</button>
-            </div>
+  <button type="button" @click="selectedPatient = null" class="bg-red-500 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg">Annuler</button> &nbsp;
+  <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg">Enregistrer Consultation</button>
+</div>
+
           </form>
         </div>
       </div>
@@ -134,6 +135,9 @@
         }
         return null;
       },
+      startAutoCheckLoginStatus() {
+      setInterval(this.checkLoginStatus, 1000); // Auto-check login status every 30 seconds
+    },
       applyFilters() {
         this.filteredPatients = this.patientsSSI.filter(patient =>
           !this.consultations.some(consultation => consultation.patient === patient.patient) &&
@@ -245,7 +249,7 @@
   form button {
     color: #fff;
     font-weight: bold;
-    padding: 10px 20px;
+    padding: 10px 5px;
     border-radius: 4px;
     transition: background-color 0.3s;
   }
